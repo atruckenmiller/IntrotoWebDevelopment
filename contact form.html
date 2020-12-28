@@ -2,20 +2,33 @@
 <html>
 <head>
 <title>Restaurant</title>
-<link rel="stylesheet" href="/Users/atrucken 1/Desktop/html-css1/Restaurant/restaurantStyles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="restaurantStyles.css">
+<script type="text/javascript" src="contact form.js"></script>
 </head>
 
 <body>
   <header>
-  <h1>Front Street Grill</h1>
+  <h1><u>Front Street Grill</u></h1>
 </header>
+<hr>
 
-<nav>
-  <hr />
-  <p><a href="home.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact</a></p>
-  <hr />
+<nav class="navbar navbar-expand-sm">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="restaurant main page.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="restaurant menu.html">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact form.html">Contact</a>
+    </li>
+  </ul>
+
 </nav>
-  <h1>Contact Us</h1>
+<hr>
+  <h1><u>Contact Us</u></h1>
   <form action="submit.html" method="POST">
   <label for="Name">Name:</label> <br />
   <input type="text" id="Name"><br />
@@ -45,16 +58,11 @@
 </legend>
 
 <legend>Best Days to contact you:</legend><br />
-<input type="checkbox" id="choice1" name="contact" value="Monday">
-<label for="choice1">M</label><br />
-<input type="checkbox" id="choice2" name="contact" value="Tuesday">
-<label for="choice2">Tu</label><br />
-<input type="checkbox" id="choice3" name="contact" value="Wednesday">
-<label for="choice3">W</label><br />
-<input type="checkbox" id="choice4" name="contact" value="Thursday">
-<label for="choice3">Th</label><br />
-<input type="checkbox" id="choice4" name="contact" value="Friday">
-<label for="choice3">F</label><br />
+<input type="checkbox" id="choice1" name="contact" value="Monday"><label for="choice1">M</label><br />
+<input type="checkbox" id="choice2" name="contact" value="Tuesday"><label for="choice2">Tu</label><br />
+<input type="checkbox" id="choice3" name="contact" value="Wednesday"><label for="choice3">W</label><br />
+<input type="checkbox" id="choice4" name="contact" value="Thursday"><label for="choice3">Th</label><br />
+<input type="checkbox" id="choice5" name="contact" value="Friday"><label for="choice5">F</label><br />
 </legend>
 
 <input type="submit" name="submit" value="Submit">
